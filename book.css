@@ -1,0 +1,245 @@
+/* Fonts */
+@font-face {
+    font-family: 'Tinos Regular';
+    src: url("fonts/Tinos-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Tinos Bold';
+    src: url("fonts/Tinos-Bold.ttf");
+}
+
+body {
+    font-family: 'Tinos Regular', serif;
+    background-color: #CBD2D0;
+    margin: 0;
+    padding: 0 0;
+}
+
+/* Extras */
+
+/* Underline for h1, h2, etc.. */
+.underline {
+    border-bottom: 3px solid #7D70BA;
+}
+
+/* Masthead */
+
+#masthead {
+    margin: 0;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1B1B;
+}
+
+#masthead h1 {
+    font-family: 'Tinos Bold', serif;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Navigation */
+
+#masthead nav ul {
+    display: flex;
+}
+
+#masthead nav ul li {
+    list-style: none;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    margin-right: .75rem;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    font-style: normal;
+    text-decoration: none;
+    color: #92a09b;
+    position: relative;
+}
+
+
+.nav-link::after {
+    content: '';
+    height: 2.5px;
+    width: 100%;
+    background-color: #7D70BA;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+/* Main */
+
+main {
+    margin: 1rem 0;
+    height: 100%;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+main p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+main h2 {
+    padding-left: 2rem;
+    font-size: 0.75rem;
+    color: #7D70BA;
+}
+
+main h2 .publish-text {
+    color: #1b1b1b;
+}
+
+.publish-heading {
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.genre-heading {
+    padding-top: 0.25rem;
+    margin-top: 0;
+}
+
+main h2 .genre-text {
+    color: #1b1b1b;
+}
+
+main h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    font-family: 'Tinos Regular', serif;
+    font-size: 0.75rem;
+    color: #7D70BA;
+}
+
+main article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.book-content {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    border-left: 3px solid #1b1b1b;
+}
+
+.book-content p {
+    width: 100%;
+}
+
+#book-content {
+    padding-left: 5rem;
+    border-left: 3px solid #1b1B1B;
+}
+
+.book-cover {
+    width: 285px;
+    height: 428px;
+    margin: 2rem auto 2.5rem;
+    box-shadow: 4px 4px 4px 3px #1B1B1B;
+}
+
+/* Footer */
+
+footer {
+    padding: 0;
+    margin-top: 0;
+    background-color: #1B1B1B;
+}
+
+footer p {
+    text-align: center;
+    color: #CBD2D0;
+    margin: 0;
+    padding: 2.5rem 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 880px) {
+    #masthead {
+        flex-direction: column;
+    }
+
+    #masthead h1 {
+        margin-bottom: 0;
+    }
+
+    #masthead nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #masthead nav ul li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-link {
+        color: #fff;
+        border-bottom: 3px solid #7D70BA;
+    }
+
+    /* Do not render pseudoelement */
+    .nav-link::after {
+        content: none;
+    }
+
+    main article {
+        flex-direction: column;
+    }
+
+    .book-content {
+        margin: 2rem 0 0;
+        width: 100%;
+        text-align: center;
+        border: none;
+
+    }
+
+    .book-content .book {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .book-content p {
+        padding: 0;
+    }
+
+    .book-content .book-text {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+}
