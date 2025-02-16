@@ -390,8 +390,7 @@ footer p {
     #masthead nav ul li {
         padding-left: 0;
         padding-right: 0;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin: 0.5rem 0;
     }
 
     .nav-link {
@@ -414,6 +413,16 @@ footer p {
     main .author-content {
         margin-top: 2rem;
         width: 50%;
+    }
+
+    main .author-content h2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main .author-content p {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #books-section .books {
