@@ -340,7 +340,6 @@ main .author-content a {
 #why-section p {
     padding-bottom: 2rem;
     margin: 0;
-    justify-self: center;
     text-align: center;
     width: 35%;
 }

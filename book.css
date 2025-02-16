@@ -235,6 +235,16 @@ footer p {
 
     }
 
+    .book-content .publish-heading {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .book-content .genre-heading {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .book-content .book {
         display: block;
         margin-left: auto;
