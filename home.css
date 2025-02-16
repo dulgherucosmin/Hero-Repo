@@ -446,6 +446,16 @@ footer p {
         border: none;
     }
 
+    .project-content .publish-heading {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .project-content .genre-heading {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .project-content h2 {
         margin-left: 0;
         padding-left: 0;
@@ -459,6 +469,10 @@ footer p {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #why-section {
+        text-align: center;
     }
 
 }
