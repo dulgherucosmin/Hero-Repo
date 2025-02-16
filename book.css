@@ -223,6 +223,10 @@ footer p {
         flex-direction: column;
     }
 
+    .main h3 {
+        padding-left: 0;
+    }
+
     .book-content {
         margin: 2rem 0 0;
         width: 100%;

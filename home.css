@@ -446,7 +446,12 @@ footer p {
         border: none;
     }
 
-    .project-content p, .project-content h3 {
+    .project-content h2 {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .project-content p, .project-content h3, .project- {
         padding-left: 0;
     }
 
