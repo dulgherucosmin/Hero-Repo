@@ -322,6 +322,9 @@ main .author-content a {
 /* Why */
 
 #why-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -470,8 +473,8 @@ footer p {
         margin-right: auto;
     }
 
-    #why-section {
-        text-align: center;
+    #why-section p {
+        width: 70%;
     }
 
 }
