@@ -230,12 +230,21 @@ footer p {
 
     main article ul {
         list-style: none;
+        padding-left: 0;
     }
 
     main article ul li a {
         text-decoration: none;
         font-weight: 600;
         border-bottom: 2px solid #7D70BA;
+    }
+
+    main .main-container h1 {
+        padding-left: 0;
+    }
+
+    main .main-container h2 {
+        padding-left: 0;
     }
 
     main .img-container img {
